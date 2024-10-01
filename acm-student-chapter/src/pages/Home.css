@@ -1,0 +1,284 @@
+/* src/styles/Home.css */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #020817; /* Background color */
+    color: white; /* Text color */
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background-image: url(../assets/bg.jpg); /* Adjust the path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    animation: slideIn 1s forwards;
+}
+
+.hero-content {
+    opacity: 0; /* Hidden until fade-in animation */
+    animation: fadeIn 1s 0.5s forwards;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-tagline {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hero-button {
+    background-color: #ff4b5c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.hero-button:hover {
+    background-color: #ff2d3a;
+    transform: scale(1.05);
+}
+
+/* Section Styles */
+section {
+    padding: 40px 20px;
+    background-color: #020817; /* Section background */
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    opacity: 0; /* Hidden until fade-in animation */
+    transition: opacity 0.5s;
+}
+
+.fade-in {
+    opacity: 1; /* Set opacity to 1 when in view */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Miscellaneous Styles */
+h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #ff4b5c; /* Heading color */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background: #ff4b5c; /* Underline color */
+    margin: 10px auto 0;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin: 10px 0;
+    padding: 10px;
+    background: rgba(255, 75, 92, 0.1);
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+li:hover {
+    transform: scale(1.02);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-tagline {
+        font-size: 1rem;
+    }
+
+    .hero-button {
+        font-size: 0.9rem;
+    }
+
+    section {
+        padding: 30px 10px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Enhanced Layout and Aesthetics */
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Center align the container */
+    padding: 0 20px; /* Side padding */
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Typography Enhancements */
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #ff4b5c; /* Primary Color */
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin: 10px 0;
+}
+
+/* Button Styles */
+.button-primary {
+    background-color: #ff4b5c;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.button-primary:hover {
+    background-color: #ff2d3a;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #121212;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+/* Media Query for Larger Devices */
+@media (min-width: 769px) {
+    .hero-title {
+        font-size: 3.5rem;
+    }
+
+    .hero-tagline {
+        font-size: 1.75rem;
+    }
+
+    section {
+        padding: 60px 40px;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Additional Classes for Responsive Design */
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+/* End of Styles */

@@ -1,0 +1,148 @@
+/* src/styles/Footer.css */
+.footer {
+    background-color: #0b011d;
+    color: white;
+    padding: 40px 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .about-club h2,
+  .quick-links h2,
+  .contact-info h2,
+  .newsletter h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .about-club p,
+  .newsletter p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .quick-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .quick-links ul li {
+    margin-bottom: 10px;
+  }
+  
+  .quick-links ul li a {
+    color: white; /* Normal text color */
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .quick-links ul li a:hover {
+    color: blue; /* Hover effect color */
+  }
+  
+  .contact-info ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-info ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .contact-info ul li svg {
+    margin-right: 8px;
+  }
+  
+  .social-icons a {
+    margin-right: 15px;
+    color: white; /* Normal text color */
+    font-size: 20px;
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: blue; /* Hover effect color */
+  }
+  
+  .newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .newsletter input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .newsletter button {
+    background-color: #ff4b5c; /* Button color */
+    color: white; /* Normal text color */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .newsletter button:hover {
+    background-color: #ff2d3a; /* Hover effect color for button */
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #888; /* Footer text color */
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-section {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .newsletter form {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .newsletter input {
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,68 @@
+/* App.css */
+
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif; /* You can change this to your preferred font */
+  background-color: #020817; /* Background color for the entire app */
+  color: white; /* Default text color */
+}
+
+/* App Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the footer is always at the bottom */
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #1b093a; /* Navbar background color */
+  padding: 10px 20px;
+}
+
+.navbar h1 {
+  margin: 0;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #1b093a; /* Footer background color */
+  padding: 10px 20px;
+  text-align: center;
+  margin-top: auto; /* Push footer to the bottom */
+}
+
+/* Loading Spinner Styles */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 80px); /* Adjust based on navbar and footer height */
+}
+
+/* Page Styles */
+.page {
+  padding: 20px;
+  flex: 1; /* Allows the page to grow and fill the available space */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  /* Mobile Styles */
+  .navbar,
+  .footer {
+    padding: 15px;
+  }
+
+  .page {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Small Mobile Styles */
+  .navbar h1 {
+    font-size: 1.5em; /* Adjust navbar title font size */
+  }
+}

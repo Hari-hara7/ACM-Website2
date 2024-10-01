@@ -1,0 +1,82 @@
+/* src/components/Contact.css */
+
+.contact-container {
+    background-color: #020817; /* Background color */
+    color: white; /* Text color */
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Ensures rounded corners are respected */
+  }
+  
+  h1, h2 {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+  }
+  
+  .contact-details {
+    margin-bottom: 20px;
+  }
+  
+  .contact-details ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* Center align list items */
+  }
+  
+  .contact-details li {
+    margin: 10px 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  a {
+    color: #1b093a; /* Link color */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .map-container {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden; /* Ensures the map fits within the rounded corners */
+    width: 100%; /* Full width */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .contact-container {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 1.5rem; /* Adjust heading size on smaller screens */
+    }
+  
+    h2 {
+      font-size: 1.25rem; /* Adjust heading size on smaller screens */
+    }
+  
+    .contact-details ul li {
+      font-size: 0.9rem; /* Adjust font size on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.25rem; /* Further adjust heading size on very small screens */
+    }
+  
+    h2 {
+      font-size: 1rem; /* Furtsher adjust heading size on very small screens */
+    }
+  
+    .contact-details ul li {
+      font-size: 0.8rem; /* Further adjust font size on very small screens */
+    }
+  }
+  
