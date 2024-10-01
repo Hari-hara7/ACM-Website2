@@ -25,11 +25,7 @@ const Navbar = () => {
             {isOpen && <FaHome className="mobile-icon" />} Home
           </Link>
         </li>
-        <li>
-          <Link to="/about" onClick={toggleMenu}>
-            {isOpen && <FaInfoCircle className="mobile-icon" />} About Us
-          </Link>
-        </li>
+       
         <li>
           <Link to="/events" onClick={toggleMenu}>
             {isOpen && <FaCalendarAlt className="mobile-icon" />} Events

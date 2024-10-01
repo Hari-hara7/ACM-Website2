@@ -19,6 +19,7 @@ body {
     position: relative;
     background-image: url(../assets/bg.jpg); /* Adjust the path */
     background-size: cover;
+    
     background-position: center;
     height: 100vh;
     display: flex;
