@@ -29,22 +29,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Info */}
-          <div className="footer-section contact-info">
-            <h2>Contact Us</h2>
-            <ul>
-              <li><FaEnvelope /> acmstudentchapter@college.com</li>
-              <li><FaPhone /> +91 12345 67890</li>
-            </ul>
-
-            {/* Social Media Icons */}
-            <div className="social-icons">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-            </div>
-          </div>
+         
 
           {/* Newsletter Signup */}
           <div className="footer-section newsletter">
