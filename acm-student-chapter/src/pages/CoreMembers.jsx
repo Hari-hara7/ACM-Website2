@@ -26,7 +26,7 @@ import thanmayi from '../assets/Thanmayi.png';
 const membersData = [
   {
     name: "Neil Mammen Prakash",
-    role: "Chair person",
+    role: "President",
     description: "Leading the club with a passion for innovation and creativity.",
     photo: unknown,
     socialLinks: {
@@ -36,7 +36,7 @@ const membersData = [
   },
   {
     name: "Namartha M",
-    role: "Vice Chairman",
+    role: "Vice President",
     description: "Managing events and activities with a focus on teamwork.",
     photo: namratha,
     socialLinks: {
