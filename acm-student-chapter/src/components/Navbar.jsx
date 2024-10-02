@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes, FaHome, FaCalendarAlt, FaInfoCircle, FaUsers, FaPhone } from 'react-icons/fa'; // Importing icons for mobile
 import './Navbar.css'; // Navbar styles
-
+import logo from '../assets/logo.png';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -15,7 +15,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="logo">
         <Link to="/">
-          <img src="/src/assets/logo.png" alt="ACM Student Chapter" />
+        <img src={logo} alt="ACM Student Chapter" />
         </Link>
       </div>
 
