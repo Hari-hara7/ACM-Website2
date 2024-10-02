@@ -217,3 +217,42 @@
   width: 100px; /* Adjust as needed */
   margin-bottom: 15px; /* Spacing below the logo */
 }
+/* Media Queries for 400x669 screen */
+@media (max-width: 400px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+    margin-bottom: 20px; /* Adjusted for smaller screen */
+  }
+
+  .newsletter form {
+    flex-direction: column;
+    gap: 10px; /* Smaller gap for tighter layout */
+    width: 100%;
+  }
+
+  .newsletter input {
+    width: 100%;
+    padding: 10px; /* Slight padding for better input focus */
+  }
+
+  .newsletter button {
+    width: 100%;
+    padding: 12px; /* Adjusted for touch-friendly button */
+  }
+
+  .footer-bottom {
+    font-size: 10px; /* Even smaller font for compact view */
+    margin-top: 20px;
+    padding: 10px; /* Reduced padding for smaller screen */
+  }
+
+  .footer-bottom p {
+    margin: 0;
+    padding: 4px 0; /* Adjust vertical spacing */
+  }
+}
