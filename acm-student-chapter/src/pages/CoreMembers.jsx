@@ -4,6 +4,7 @@ import clubLogo from '../assets/logo.png'; // Path to the club logo
 
 // Importing all the member photos
 import unknown from '../assets/unknown.png';
+import Eshaan from '../assets/Eshaan.png';
 import lasya from '../assets/shreelasya.png';
 import Rashmitha from '../assets/Rashmitha.png';
 import Neil from '../assets/Neil.png';
@@ -233,7 +234,7 @@ const membersData = [
     name: "Eshaan",
     role: "Graphic Designer",
     description: "Designing visual content and club branding materials.",
-    photo: unknown,
+    photo: Eshaan,
     socialLinks: {
       linkedin: "https://linkedin.com/in/olivertwist",
       github: "https://github.com/olivertwist",
