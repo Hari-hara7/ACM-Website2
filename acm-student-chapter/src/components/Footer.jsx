@@ -1,7 +1,8 @@
 // src/components/Footer.jsx
 
 import { Link } from 'react-router-dom';
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaEnvelope, FaPhone } from 'react-icons/fa'; // Import icons
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin,  } from 'react-icons/fa'; // Import icons
+import logo from '../assets/logo.png'; // Import your logo image
 import './Footer.css'; // Import CSS file
 
 const Footer = () => {
@@ -11,6 +12,7 @@ const Footer = () => {
         <div className="footer-content">
           {/* Club Information */}
           <div className="footer-section about-club">
+            <img src={logo} alt="ACM Student Chapter Logo" className="footer-logo" />
             <h2>ACM Student Chapter</h2>
             <p>
               The ACM Student Chapter is a student-run organization that fosters learning, collaboration, and innovation in the field of computer science. We organize events, workshops, and competitions that bring students together and help them grow in their technical journey.
@@ -22,14 +24,11 @@ const Footer = () => {
             <h2>Quick Links</h2>
             <ul>
               <li><Link to="/">Home</Link></li>
-             
               <li><Link to="/events">Events</Link></li>
               <li><Link to="/core-members">Core Members</Link></li>
               <li><Link to="/contact">Contact Us</Link></li>
             </ul>
           </div>
-
-         
 
           {/* Newsletter Signup */}
           <div className="footer-section newsletter">
@@ -39,6 +38,17 @@ const Footer = () => {
               <input type="email" placeholder="Enter your email" required />
               <button type="submit">Subscribe</button>
             </form>
+          </div>
+        </div>
+
+        {/* Social Media Section */}
+        <div className="footer-section social-media">
+          <h2>Follow Us</h2>
+          <div className="social-icons">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><FaFacebook /></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><FaTwitter /></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
           </div>
         </div>
 

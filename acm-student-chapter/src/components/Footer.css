@@ -183,3 +183,27 @@
     width: 100%;
   }
 }
+.social-media {
+  text-align: center; /* Center align the content */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center; /* Center align the icons */
+  margin-top: 15px; /* Space between heading and icons */
+}
+
+.social-icons a {
+  margin: 0 10px; /* Space between icons */
+  color: white; /* Icon color */
+  font-size: 22px; /* Icon size */
+  transition: color 0.3s ease; /* Transition for hover effect */
+}
+
+.social-icons a:hover {
+  color: #ff4b5c; /* Change color on hover */
+}
+.footer-logo {
+  width: 100px; /* Adjust as needed */
+  margin-bottom: 15px; /* Spacing below the logo */
+}
