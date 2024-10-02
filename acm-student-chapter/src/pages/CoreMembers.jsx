@@ -4,6 +4,7 @@ import clubLogo from '../assets/logo.png'; // Path to the club logo
 
 // Importing all the member photos
 import unknown from '../assets/unknown.png';
+import lasya from '../assets/shreelasya.png';
 import Rashmitha from '../assets/Rashmitha.png';
 import Neil from '../assets/Neil.png';
 import namratha from '../assets/namratha.png';
@@ -252,7 +253,7 @@ const membersData = [
     name: "Shreelasya",
     role: "Social Media Head",
     description: "Oversees the creation and design of visual content for social media, ensuring consistency with club branding. Leads campaigns and strategies to enhance digital engagement.",
-    photo: unknown, // You can replace "unknown" with the actual path to Shreelasya's photo if available
+    photo: lasya, // You can replace "unknown" with the actual path to Shreelasya's photo if available
     socialLinks: {
       linkedin: "https://linkedin.com/in/olivertwist",
       github: "https://github.com/olivertwist",
