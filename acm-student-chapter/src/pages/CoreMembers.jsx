@@ -75,6 +75,16 @@ const membersData = [
     },
   },
   {
+    name: "Ayush Chaudhary",
+    role: "Web Developer",
+    description: "Building and maintaining the club's digital presence.",
+    photo: unknown,
+    socialLinks: {
+      linkedin: "https://linkedin.com/in/alicejohnson",
+      github: "https://github.com/alicejohnson",
+    },
+  },
+  {
     name: "Shaldon Barnes",
     role: "Web Developer",
     description: "Creating innovative web solutions for the club's needs.",
@@ -85,7 +95,7 @@ const membersData = [
     },
   },
   {
-    name: "Swathi Shetty",
+    name: "Swasthi Shetty",
     role: "Event Head",
     description: "Planning and organizing exciting club events.",
     photo: swathi,
@@ -165,6 +175,17 @@ const membersData = [
     },
   },
   {
+    name: "Aakash",
+    role: "Photography Head",
+    description: "Leads the photography team by capturing and documenting events, ensuring high-quality visual content for the club’s archives and promotional activities.",
+    photo: unknown, // Replace "unknown" with the actual path to Aakash's photo if available
+    socialLinks: {
+      linkedin: "https://linkedin.com/in/karathrace",
+      github: "https://github.com/karathrace",
+    },
+  },
+
+  {
     name: "V Mithun Mallya",
     role: "Photography Co-head",
     description: "Capturing memories and moments at all events.",
@@ -195,15 +216,67 @@ const membersData = [
     },
   },
   {
+    name: "Eshaan",
+    role: "Graphic Designer",
+    description: "Designing visual content and club branding materials.",
+    photo: unknown,
+    socialLinks: {
+      linkedin: "https://linkedin.com/in/olivertwist",
+      github: "https://github.com/olivertwist",
+    },
+  },
+  {
+    name: "Sarang Sudheep",
+    role: "Graphic Designer",
+    description: "Designing visual content and club branding materials.",
+    photo: unknown,
+    socialLinks: {
+      linkedin: "https://linkedin.com/in/olivertwist",
+      github: "https://github.com/olivertwist",
+    },
+  },
+  {
+    name: "Shreelasya",
+    role: "Social Media Head",
+    description: "Oversees the creation and design of visual content for social media, ensuring consistency with club branding. Leads campaigns and strategies to enhance digital engagement.",
+    photo: unknown, // You can replace "unknown" with the actual path to Shreelasya's photo if available
+    socialLinks: {
+      linkedin: "https://linkedin.com/in/olivertwist",
+      github: "https://github.com/olivertwist",
+    },
+  },
+  {
     name: "Thanmayi",
     role: "Social Media Co-head",
-    description: "Managing and curating content for social media platforms.",
-    photo: thanmayi,
+    description: "Supports the Social Media Head by managing daily content creation and curation across platforms. Collaborates on digital marketing strategies to grow online presence.",
+    photo: thanmayi, // You can replace "thanmayi" with the actual path to Thanmayi's photo
     socialLinks: {
       linkedin: "https://linkedin.com/in/rickgrimes",
       github: "https://github.com/rickgrimes",
     },
   },
+
+  {
+    name: "Shyvalani B S",
+    role: "Student Advisor",
+    description: "Provides guidance and mentorship to the club members, offering insights into project execution and academic balance. Assists in aligning club activities with academic goals.",
+    photo: unknown, // Replace "unknown" with the actual path to Shyvalani's photo if available
+    socialLinks: {
+      linkedin: "https://linkedin.com/in/olivertwist",
+      github: "https://github.com/olivertwist",
+    },
+  },
+  {
+    name: "Sahil S Kambli",
+    role: "Student Advisor",
+    description: "Acts as a mentor for club activities, advising on both academic and extracurricular aspects. Helps students navigate through their club responsibilities and academic journey.",
+    photo: unknown, // Replace "unknown" with the actual path to Sahil's photo if available
+    socialLinks: {
+      linkedin: "https://linkedin.com/in/olivertwist",
+      github: "https://github.com/olivertwist",
+    },
+  },
+
 ];
 
 // CoreMembers component definition with GitHub and LinkedIn icons
