@@ -1,6 +1,6 @@
-import { motion } from 'framer-motion';
-import './CoreMembers.css'; // Importing styles
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import React from 'react';
+import './CoreMembers.css'; // Ensure this CSS file exists for styling
+import clubLogo from '../assets/logo.png'; // Path to the club logo
 
 // Importing all the member photos
 import unknown from '../assets/unknown.png';
@@ -22,192 +22,218 @@ import ajay from '../assets/Ajay.png';
 import pratheeksha from '../assets/prathiksha.png';
 import thanmayi from '../assets/Thanmayi.png';
 
-
-
-const teamMembers =  [
+// Member data with their photos and social media links, and descriptions
+const membersData = [
   {
-    name: 'Neil Mammen Prakash',
-    role: 'Chair person',
-    description: 'Leading the team with vision and direction.',
-    github: 'https://github.com/johndoe',
-    linkedin: 'https://linkedin.com/in/johndoe',
-    photo: unknown, // Update with actual path
+    name: "Neil Mammen Prakash",
+    role: "Chair person",
+    description: "Leading the club with a passion for innovation and creativity.",
+    photo: unknown,
+    socialLinks: {
+      linkedin: "https://linkedin.com/in/johndoe",
+      github: "https://github.com/johndoe",
+    },
   },
   {
-    name: 'Namartha M',
-    role: 'Vice Chairman',
-    description: 'Assisting the chair in managing the team and projects.',
-    github: 'https://github.com/janesmith',
-    linkedin: 'https://linkedin.com/in/janesmith',
-    photo: namratha , // Update with actual path
+    name: "Namartha M",
+    role: "Vice Chairman",
+    description: "Managing events and activities with a focus on teamwork.",
+    photo: namratha,
+    socialLinks: {
+      linkedin: "https://linkedin.com/in/janesmith",
+      github: "https://github.com/janesmith",
+    },
   },
   {
-    name: 'Sannidhi S Shetty',
-    role: 'Secretary',
-    description: 'Responsible for documentation and communication.',
-    github: 'https://github.com/tombrown',
-    linkedin: 'https://linkedin.com/in/tombrown',
-    photo: sannidhi, // Update with actual path
+    name: "Sannidhi S Shetty",
+    role: "Secretary",
+    description: "Coordinating club operations and ensuring smooth workflow.",
+    photo: sannidhi,
+    socialLinks: {
+      linkedin: "https://linkedin.com/in/tombrown",
+      github: "https://github.com/tombrown",
+    },
   },
   {
-    name: 'Sujal Sunil Badde',
-    role: 'Vice Secretary',
-    description: 'Supporting the secretary in all tasks and responsibilities.',
-    github: 'https://github.com/emilywhite',
-    linkedin: 'https://linkedin.com/in/emilywhite',
-    photo: sujal, // Update with actual path
+    name: "Sujal Sunil Badde",
+    role: "Vice Secretary",
+    description: "Assisting in club coordination and communication.",
+    photo: sujal,
+    socialLinks: {
+      linkedin: "https://linkedin.com/in/emilywhite",
+      github: "https://github.com/emilywhite",
+    },
   },
   {
-    name: 'K.B.Hariharanath',
-    role: 'Web Developer',
-    description: 'Creating and maintaining the team’s online presence.',
-    github: 'https://github.com/alicejohnson',
-    linkedin: 'https://linkedin.com/in/alicejohnson',
-    photo: hari, // Update with actual path
+    name: "K.B.Hariharanath",
+    role: "Web Developer",
+    description: "Building and maintaining the club's digital presence.",
+    photo: hari,
+    socialLinks: {
+      linkedin: "https://linkedin.com/in/alicejohnson",
+      github: "https://github.com/alicejohnson",
+    },
   },
   {
-    name: 'Shaldon Barnes',
-    role: 'Web Developer',
-    description: 'Developing innovative web solutions for our projects.',
-    github: 'https://github.com/chrisevans',
-    linkedin: 'https://linkedin.com/in/chrisevans',
-    photo:shaldon, // Update with actual path
+    name: "Shaldon Barnes",
+    role: "Web Developer",
+    description: "Creating innovative web solutions for the club's needs.",
+    photo: shaldon,
+    socialLinks: {
+      linkedin: "https://linkedin.com/in/chrisevans",
+      github: "https://github.com/chrisevans",
+    },
   },
   {
-    name: 'Swathi Shetty',
-    role: 'Event Head',
-    description: 'Overseeing and organizing events and activities.',
-    github: 'https://github.com/dianaprince',
-    linkedin: 'https://linkedin.com/in/dianaprince',
-    photo: swathi, // Update with actual path
+    name: "Swathi Shetty",
+    role: "Event Head",
+    description: "Planning and organizing exciting club events.",
+    photo: swathi,
+    socialLinks: {
+      linkedin: "https://linkedin.com/in/dianaprince",
+      github: "https://github.com/dianaprince",
+    },
   },
   {
-    name: 'Anagha',
-    role: 'Event Co-Head',
-    description: 'Assisting in planning and executing events.',
-    github: 'https://github.com/ethanhunt',
-    linkedin: 'https://linkedin.com/in/ethanhunt',
-    photo: anagha, // Update with actual path
+    name: "Anagha",
+    role: "Event Co-Head",
+    description: "Assisting in event management and execution.",
+    photo: anagha,
+    socialLinks: {
+      linkedin: "https://linkedin.com/in/ethanhunt",
+      github: "https://github.com/ethanhunt",
+    },
   },
   {
-    name: 'Harshita Hegde',
-    role: 'Publicity Head',
-    description: 'Managing all publicity and promotional activities.',
-    github: 'https://github.com/fionagallagher',
-    linkedin: 'https://linkedin.com/in/fionagallagher',
-    photo:harshitha, // Update with actual path
+    name: "Harshita Hegde",
+    role: "Publicity Head",
+    description: "Handling club promotions and public relations.",
+    photo: harshitha,
+    socialLinks: {
+      linkedin: "https://linkedin.com/in/fionagallagher",
+      github: "https://github.com/fionagallagher",
+    },
   },
   {
-    name: 'Gokul Anil',
-    role: 'Publicity Co-Head',
-    description: 'Supporting the publicity head in marketing initiatives.',
-    github: 'https://github.com/georgeclooney',
-    linkedin: 'https://linkedin.com/in/georgeclooney',
-    photo: gokul, // Update with actual path
+    name: "Gokul Anil",
+    role: "Publicity Co-Head",
+    description: "Supporting publicity efforts and outreach activities.",
+    photo: gokul,
+    socialLinks: {
+      linkedin: "https://linkedin.com/in/georgeclooney",
+      github: "https://github.com/georgeclooney",
+    },
   },
   {
-    name: 'Susan Riona Dsouza',
-    role: 'Second Year Representative',
-    description: 'Representing the interests of second-year students.',
-    github: 'https://github.com/hannahbaker',
-    linkedin: 'https://linkedin.com/in/hannahbaker',
-    photo: susan, // Update with actual path
+    name: "Susan Riona Dsouza",
+    role: "Second Year Representative",
+    description: "Representing the voice of second-year students.",
+    photo: susan,
+    socialLinks: {
+      linkedin: "https://linkedin.com/in/hannahbaker",
+      github: "https://github.com/hannahbaker",
+    },
   },
   {
-    name: 'Shawn Dsouza',
-    role: 'Third Year Representative',
-    description: 'Acting as a liaison for third-year students.',
-    github: 'https://github.com/ianmalcolm',
-    linkedin: 'https://linkedin.com/in/ianmalcolm',
-    photo: shawn, // Update with actual path
+    name: "Shawn Dsouza",
+    role: "Third Year Representative",
+    description: "Connecting third-year students to club activities.",
+    photo: shawn,
+    socialLinks: {
+      linkedin: "https://linkedin.com/in/ianmalcolm",
+      github: "https://github.com/ianmalcolm",
+    },
   },
   {
-    name: 'Diya M Shetty',
-    role: 'Documentation Head',
-    description: 'Managing all project documentation and reports.',
-    github: 'https://github.com/jacksparrow',
-    linkedin: 'https://linkedin.com/in/jacksparrow',
-    photo: diya, // Update with actual path
+    name: "Diya M Shetty",
+    role: "Documentation Head",
+    description: "Managing and organizing all documentation tasks.",
+    photo: diya,
+    socialLinks: {
+      linkedin: "https://linkedin.com/in/jacksparrow",
+      github: "https://github.com/jacksparrow",
+    },
   },
   {
-    name: 'Dhruva Shedbalkar',
-    role: 'Documentation Co-head',
-    description: 'Assisting the documentation head with various tasks.',
-    github: 'https://github.com/karathrace',
-    linkedin: 'https://linkedin.com/in/karathrace',
-    photo: dhruva, // Update with actual path
+    name: "Dhruva Shedbalkar",
+    role: "Documentation Co-head",
+    description: "Supporting the documentation and records team.",
+    photo: dhruva,
+    socialLinks: {
+      linkedin: "https://linkedin.com/in/karathrace",
+      github: "https://github.com/karathrace",
+    },
   },
   {
-    name: 'V Mithun Mallya',
-    role: 'Photography Co-head',
-    description: 'Capturing moments and creating visual content.',
-    github: 'https://github.com/mayaangelou',
-    linkedin: 'https://linkedin.com/in/mayaangelou',
-    photo: mithun, // Update with actual path
+    name: "V Mithun Mallya",
+    role: "Photography Co-head",
+    description: "Capturing memories and moments at all events.",
+    photo: mithun,
+    socialLinks: {
+      linkedin: "https://linkedin.com/in/mayaangelou",
+      github: "https://github.com/mayaangelou",
+    },
   },
   {
-    name: 'N Ajay Kamath',
-    role: 'Photography Co-head',
-    description: 'Collaborating on photography projects and documentation.',
-    github: 'https://github.com/ninasimone',
-    linkedin: 'https://linkedin.com/in/ninasimone',
-    photo: ajay, // Update with actual path
+    name: "N Ajay Kamath",
+    role: "Photography Co-head",
+    description: "Assisting in event photography and media coverage.",
+    photo: ajay,
+    socialLinks: {
+      linkedin: "https://linkedin.com/in/ninasimone",
+      github: "https://github.com/ninasimone",
+    },
   },
   {
-    name: 'Pratheeksha',
-    role: 'Graphic Designer',
-    description: 'Designing graphics and visual materials for projects.',
-    github: 'https://github.com/olivertwist',
-    linkedin: 'https://linkedin.com/in/olivertwist',
-    photo: pratheeksha, // Update with actual path
+    name: "Pratheeksha",
+    role: "Graphic Designer",
+    description: "Designing visual content and club branding materials.",
+    photo: pratheeksha,
+    socialLinks: {
+      linkedin: "https://linkedin.com/in/olivertwist",
+      github: "https://github.com/olivertwist",
+    },
   },
   {
-    name: 'Thanmayi',
-    role: 'Social Media Co-head',
-    description: 'Managing social media accounts and strategies.',
-    github: 'https://github.com/rickgrimes',
-    linkedin: 'https://linkedin.com/in/rickgrimes',
-    photo: thanmayi, // Update with actual path
+    name: "Thanmayi",
+    role: "Social Media Co-head",
+    description: "Managing and curating content for social media platforms.",
+    photo: thanmayi,
+    socialLinks: {
+      linkedin: "https://linkedin.com/in/rickgrimes",
+      github: "https://github.com/rickgrimes",
+    },
   },
 ];
 
-
-
-const AboutUs = () => {
+// CoreMembers component definition with GitHub and LinkedIn icons
+const CoreMembers = () => {
   return (
-    <div className="about-container">
-      <motion.h1 className="about-title" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
-        About Us
-      </motion.h1>
-      <motion.p className="about-description" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.5 }}>
-        We are a passionate team dedicated to providing top-notch web development services, specializing in PWA, SEO, UI/UX design, and much more. Our mission is to create innovative solutions that empower users and enhance their online experiences.
-      </motion.p>
-
-      <div className="team-container">
-        {teamMembers.map((member) => (
-          <motion.div className="team-card" key={member.name} initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5 }}>
-            <img src={member.photo} alt={`${member.name}`} className="team-photo" />
-            <h3 className="team-member-name">{member.name}</h3>
-            <p className="team-member-role">{member.role}</p>
-            <p className="team-member-description">{member.description}</p>
+    <div className="core-members" style={{ '--primary-bg-color': '#0b011d', '--secondary-bg-color': '#1d1330', '--primary-text-color': '#ffffff' }}>
+      <h1>Meet Our Core Members</h1>
+      <div className="members-grid">
+        {membersData.map((member, index) => (
+          <div className="member-card" key={index}>
+            <div className="card-header">
+              <img src={clubLogo} alt="Club Logo" className="club-logo" />
+              <h3>{member.name}</h3>
+            </div>
+            <img src={member.photo} alt={member.name} className="member-photo" />
+            <p className="member-role">{member.role}</p>
+            <p className="member-description">{member.description}</p>
             <div className="social-links">
-              <a href={member.github} target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="GitHub">
-                <FaGithub />
+              <a href={member.socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-linkedin"></i> {/* LinkedIn icon */}
               </a>
-              <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="LinkedIn">
-                <FaLinkedin />
+              <a href={member.socialLinks.github} target="_blank" rel="noopener noreferrer">
+                <i className="fab fa-github"></i> {/* GitHub icon */}
               </a>
             </div>
-            <a href={member.github} target="_blank" rel="noopener noreferrer" className="github-button">
-              View GitHub
-            </a>
-          </motion.div>
+          </div>
         ))}
       </div>
-
-     
     </div>
   );
 };
 
-export default AboutUs;
+export default CoreMembers;

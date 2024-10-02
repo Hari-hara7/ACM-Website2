@@ -2,6 +2,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css'; // Global styling if needed
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 // Import all the page components from the pages folder
 import Home from './pages/Home';
