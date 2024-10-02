@@ -94,9 +94,9 @@ const Home = () => {
         <h2>Meet Our Core Members</h2>
         <p>Our dedicated team is here to guide and support you!</p>
         <ul>
-          <li>John Doe - President</li>
-          <li>Jane Smith - Vice President</li>
-          <li>Tom Brown - Secretary</li>
+          <li>Neil - President</li>
+          <li>Namratha - Vice President</li>
+          <li>Sannidhi - Secretary</li>
         </ul>
       </section>
 
