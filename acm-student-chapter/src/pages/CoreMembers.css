@@ -226,9 +226,11 @@ body {
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Adjusted for better fit */
         gap: 20px; /* Reduced gap for smaller screens */
         justify-items: center;
-        max-width: 250px;
-         /* Added padding */
+        max-width: 350%; /* Full width available */
+        margin: 0 auto; /* Centers the grid horizontally */
+        padding: 0 0px; /* Adds some padding to the left and right for spacing */
     }
+    
     .member-photo {
         width: 60%; /* Adjusted size */
     }
