@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat+Alternates:wght@400;700&family=Poppins:wght@400;500;700&display=swap');
+
 :root {
   --primary-bg-color: #0b011d;
   --secondary-bg-color: #1d1330;
@@ -7,7 +9,6 @@
   --shadow-color: rgba(255, 87, 87, 0.3);
   --hover-shadow-color: rgba(255, 87, 87, 0.6);
 }
-
 
 * {
   margin: 0;
@@ -29,6 +30,7 @@ body {
 }
 
 h1 {
+  font-family: 'Anton', sans-serif; /* Special Heading Font */
   font-size: 3rem;
   margin-bottom: 40px;
   color: var(--accent-color);
@@ -108,6 +110,7 @@ h1::after {
 }
 
 h3 {
+  font-family: 'Montserrat Alternates', sans-serif; /* Font for Event Titles */
   margin: 0;
   font-size: 1.8rem;
   color: var(--accent-color);
@@ -126,12 +129,14 @@ h3 {
   font-weight: bold;
   color: var(--accent-hover-color);
   margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif; /* Use Poppins for date */
 }
 
 .event-description {
   font-size: 1rem;
   line-height: 1.6;
   color: var(--primary-text-color);
+  font-family: 'Poppins', sans-serif; /* Use Poppins for description */
 }
 
 .event-icon {
@@ -179,7 +184,7 @@ h3 {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 0.9rem; /* Decrease h1 font size on mobile */
+    font-size: 2.5rem; /* Adjust h1 font size for mobile */
   }
 
   .events-grid {
@@ -188,14 +193,14 @@ h3 {
   }
 
   .event-card {
-    max-width: 1000%; /* Make the card take full width on smaller screens */
-    padding: 100px;
+    max-width: 100%; /* Full-width card for mobile */
+    padding: 20px; /* Adjust padding for mobile */
   }
 }
 
 @media (max-width: 576px) {
   h1 {
-    font-size: 1rem; /* Adjust h1 font size further for smaller devices */
+    font-size: 1.5rem; /* Adjust h1 font size further for smaller devices */
   }
 
   .events-grid {
@@ -203,8 +208,8 @@ h3 {
   }
 
   .event-card {
-    padding: 20px;
-    max-width: 100%; /* Make the card wider (95%) for smaller mobile screens */
+    padding: 15px; /* Further adjust padding for mobile */
+    max-width: 100%; /* Make the card wider for smaller mobile screens */
   }
 
   .card-header {
