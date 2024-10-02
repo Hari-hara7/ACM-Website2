@@ -65,7 +65,7 @@ const membersData = [
     },
   },
   {
-    name: "K.B.Hariharanath",
+    name: "Hariharanath",
     role: "Web Developer",
     description: "Building and maintaining the club's digital presence.",
     photo: hari,

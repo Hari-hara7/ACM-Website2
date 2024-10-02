@@ -226,7 +226,7 @@ body {
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Adjusted for better fit */
         gap: 20px; /* Reduced gap for smaller screens */
         justify-items: center;
-        max-width: 150px;
+        max-width: 250px;
          /* Added padding */
     }
     .member-photo {
