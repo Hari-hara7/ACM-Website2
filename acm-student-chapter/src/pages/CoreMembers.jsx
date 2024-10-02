@@ -4,6 +4,7 @@ import clubLogo from '../assets/logo.png'; // Path to the club logo
 
 // Importing all the member photos
 import unknown from '../assets/unknown.png';
+import Rashmitha from '../assets/Rashmitha.png';
 import Neil from '../assets/Neil.png';
 import namratha from '../assets/namratha.png';
 import sannidhi from '../assets/sannifhi.png';
@@ -45,6 +46,17 @@ const membersData = [
       github: "https://github.com/janesmith",
     },
   },
+  {
+    name: "Rashmitha r bangera", // Replace with the actual name
+    role: "Treasurer",
+    description: "Responsible for managing the club’s finances, overseeing budgeting, and ensuring financial transparency for all activities and events.",
+    photo: Rashmitha, // Replace "unknown" with the actual path to the Treasurer's photo if available
+    socialLinks: {
+      linkedin: "https://linkedin.com/in/treasurerprofile", // Replace with actual LinkedIn URL
+      github: "https://github.com/treasurerprofile", // Replace with actual GitHub URL if applicable
+    },
+  },
+
   {
     name: "Sannidhi S Shetty",
     role: "Secretary",
