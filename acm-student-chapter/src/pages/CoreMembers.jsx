@@ -4,6 +4,7 @@ import clubLogo from '../assets/logo.png'; // Path to the club logo
 
 // Importing all the member photos
 import unknown from '../assets/unknown.png';
+import Neil from '../assets/Neil.png';
 import namratha from '../assets/namratha.png';
 import sannidhi from '../assets/sannifhi.png';
 import sujal from '../assets/Sujal.png';
@@ -28,7 +29,7 @@ const membersData = [
     name: "Neil Mammen Prakash",
     role: "President",
     description: "Leading the club with a passion for innovation and creativity.",
-    photo: unknown,
+    photo: Neil,
     socialLinks: {
       linkedin: "https://linkedin.com/in/johndoe",
       github: "https://github.com/johndoe",
