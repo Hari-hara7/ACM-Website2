@@ -2,6 +2,7 @@
 .contact-page {
   background-color: #020817;
   color: white;
+  max-width: 1500px;
   padding: 40px 20px;
   text-align: center;
 }
