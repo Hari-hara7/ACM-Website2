@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="path/to/logo.png" alt="ACM NMAMIT Club Logo" width="200"/>
+  <img src="acm.jpg" alt="ACM NMAMIT Club Logo"/>
 </p>
 
 # ACM - NMAMIT Club Website
