@@ -1,4 +1,4 @@
-// src/components/Events.jsx
+
 import './Events.css'; 
 import { FaLaptopCode, FaTools, FaMicrophone, FaRobot, FaCloud, FaLock, FaChartBar, FaMobileAlt } from 'react-icons/fa';
 import clubLogo from '../assets/logo.png'; 
