@@ -1,16 +1,14 @@
-// src/App.js
+
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import './App.css'; // Global styling if needed
+import './App.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-// Import all the page components from the pages folder
 import Home from './pages/Home';
-import Events from './pages/Events'; // Ensure the folder name is correct
-import CoreMembers from './pages/CoreMembers'; // Ensure the folder name is correct
-import Contact from './pages/Contact'; // Ensure the folder name is correct
+import Events from './pages/Events'; 
+import CoreMembers from './pages/CoreMembers'; 
+import Contact from './pages/Contact'; 
 
-// Import Navbar and Footer components for layout
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
@@ -18,12 +16,8 @@ const App = () => {
   return (
     <Router>
       <div className="App">
-        {/* Navbar will be visible on all pages */}
         <Navbar />
-
-        {/* Main content area */}
-        <main style={{ paddingTop: '60px' }}> {/* Add padding for fixed navbar */}
-          {/* Define the routes for each page */}
+        <main style={{ paddingTop: '60px' }}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/events" element={<Events />} />
@@ -31,8 +25,6 @@ const App = () => {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
-
-        {/* Footer will be visible on all pages */}
         <Footer />
       </div>
     </Router>
