@@ -1,8 +1,8 @@
 import React from 'react';
-import './CoreMembers.css'; // Ensure this CSS file exists for styling
-import clubLogo from '../assets/logo.png'; // Path to the club logo
+import './CoreMembers.css'; 
+import clubLogo from '../assets/logo.png'; 
 
-// Importing all the member photos
+
 import unknown from '../assets/unknown.png';
 import Eshaan from '../assets/Eshaan.png';
 import lasya from '../assets/shreelasya.png';
@@ -26,7 +26,7 @@ import ajay from '../assets/Ajay.png';
 import pratheeksha from '../assets/prathiksha.png';
 import thanmayi from '../assets/Thanmayi.png';
 
-// Member data with their photos and social media links, and descriptions
+
 const membersData = [
   {
     name: "Neil Mammen Prakash",
@@ -49,13 +49,13 @@ const membersData = [
     },
   },
   {
-    name: "Rashmitha r bangera", // Replace with the actual name
+    name: "Rashmitha r bangera",
     role: "Treasurer",
     description: "Responsible for managing the club’s finances, overseeing budgeting, and ensuring financial transparency for all activities and events.",
-    photo: Rashmitha, // Replace "unknown" with the actual path to the Treasurer's photo if available
+    photo: Rashmitha, 
     socialLinks: {
-      linkedin: "https://linkedin.com/in/treasurerprofile", // Replace with actual LinkedIn URL
-      github: "https://github.com/treasurerprofile", // Replace with actual GitHub URL if applicable
+      linkedin: "https://linkedin.com/in/treasurerprofile", 
+      github: "https://github.com/treasurerprofile", 
     },
   },
 
@@ -193,7 +193,7 @@ const membersData = [
     name: "Aakash",
     role: "Photography Head",
     description: "Leads the photography team by capturing and documenting events, ensuring high-quality visual content for the club’s archives and promotional activities.",
-    photo: unknown, // Replace "unknown" with the actual path to Aakash's photo if available
+    photo: unknown, 
     socialLinks: {
       linkedin: "https://linkedin.com/in/karathrace",
       github: "https://github.com/karathrace",
@@ -254,7 +254,7 @@ const membersData = [
     name: "Shreelasya",
     role: "Social Media Head",
     description: "Oversees the creation and design of visual content for social media, ensuring consistency with club branding. Leads campaigns and strategies to enhance digital engagement.",
-    photo: lasya, // You can replace "unknown" with the actual path to Shreelasya's photo if available
+    photo: lasya, 
     socialLinks: {
       linkedin: "https://linkedin.com/in/olivertwist",
       github: "https://github.com/olivertwist",
@@ -264,7 +264,7 @@ const membersData = [
     name: "Thanmayi",
     role: "Social Media Co-head",
     description: "Supports the Social Media Head by managing daily content creation and curation across platforms. Collaborates on digital marketing strategies to grow online presence.",
-    photo: thanmayi, // You can replace "thanmayi" with the actual path to Thanmayi's photo
+    photo: thanmayi,
     socialLinks: {
       linkedin: "https://linkedin.com/in/rickgrimes",
       github: "https://github.com/rickgrimes",
@@ -275,7 +275,7 @@ const membersData = [
     name: "Shyvalani B S",
     role: "Student Advisor",
     description: "Provides guidance and mentorship to the club members, offering insights into project execution and academic balance. Assists in aligning club activities with academic goals.",
-    photo: unknown, // Replace "unknown" with the actual path to Shyvalani's photo if available
+    photo: unknown, 
     socialLinks: {
       linkedin: "https://linkedin.com/in/olivertwist",
       github: "https://github.com/olivertwist",
@@ -285,7 +285,7 @@ const membersData = [
     name: "Sahil S Kambli",
     role: "Student Advisor",
     description: "Acts as a mentor for club activities, advising on both academic and extracurricular aspects. Helps students navigate through their club responsibilities and academic journey.",
-    photo: unknown, // Replace "unknown" with the actual path to Sahil's photo if available
+    photo: unknown, 
     socialLinks: {
       linkedin: "https://linkedin.com/in/olivertwist",
       github: "https://github.com/olivertwist",
@@ -294,7 +294,7 @@ const membersData = [
 
 ];
 
-// CoreMembers component definition with GitHub and LinkedIn icons
+
 const CoreMembers = () => {
   return (
     <div className="core-members" style={{ '--primary-bg-color': '#0b011d', '--secondary-bg-color': '#1d1330', '--primary-text-color': '#ffffff' }}>
@@ -311,10 +311,10 @@ const CoreMembers = () => {
             <p className="member-description">{member.description}</p>
             <div className="social-links">
               <a href={member.socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-linkedin"></i> {/* LinkedIn icon */}
+                <i className="fab fa-linkedin"></i> 
               </a>
               <a href={member.socialLinks.github} target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-github"></i> {/* GitHub icon */}
+                <i className="fab fa-github"></i> 
               </a>
             </div>
           </div>
