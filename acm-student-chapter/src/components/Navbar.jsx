@@ -1,8 +1,8 @@
-// src/components/Navbar.jsx
+
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaBars, FaTimes, FaHome, FaCalendarAlt, FaInfoCircle, FaUsers, FaPhone } from 'react-icons/fa'; // Importing icons for mobile
-import './Navbar.css'; // Navbar styles
+import { FaBars, FaTimes, FaHome, FaCalendarAlt, FaInfoCircle, FaUsers, FaPhone } from 'react-icons/fa'; 
+import './Navbar.css'; 
 import logo from '../assets/logo.png';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
