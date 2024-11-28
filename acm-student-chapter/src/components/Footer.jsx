@@ -1,16 +1,16 @@
-// src/components/Footer.jsx
+
 
 import { Link } from 'react-router-dom';
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin,  } from 'react-icons/fa'; // Import icons
-import logo from '../assets/logo.png'; // Import your logo image
-import './Footer.css'; // Import CSS file
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin,  } from 'react-icons/fa'; 
+import logo from '../assets/logo.png'; 
+import './Footer.css'; 
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
         <div className="footer-content">
-          {/* Club Information */}
+         
           <div className="footer-section about-club">
             <img src={logo} alt="ACM Student Chapter Logo" className="footer-logo" />
             <h2>ACM Student Chapter</h2>
@@ -19,7 +19,7 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Quick Links */}
+         
           <div className="footer-section quick-links">
             <h2>Quick Links</h2>
             <ul>
@@ -30,7 +30,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Newsletter Signup */}
+        
           <div className="footer-section newsletter">
             <h2>Join Our Newsletter</h2>
             <p>Subscribe to our newsletter to receive the latest news and updates on upcoming events.</p>
@@ -41,7 +41,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Social Media Section */}
+       
         <div className="footer-section social-media">
           <h2>Follow Us</h2>
           <div className="social-icons">
@@ -52,7 +52,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Footer Bottom */}
+     
         <div className="footer-bottom">
           <p>&copy; 2024 ACM Student Chapter. All Rights Reserved.</p>
           <ul className="footer-links">
