@@ -1,15 +1,15 @@
-// src/Pages/Contact.jsx
 
-import './Contact.css'; // Ensure you create a corresponding CSS file for styling
-import { useState } from 'react'; // Import useState to manage form state
+
+import './Contact.css'; 
+import { useState } from 'react'; 
 
 const Contact = () => {
-  const [isSubmitted, setIsSubmitted] = useState(false); // State to track submission
-  const [error, setError] = useState(null); // State to track errors
+  const [isSubmitted, setIsSubmitted] = useState(false); 
+  const [error, setError] = useState(null); 
 
   const handleSubmit = async (event) => {
-    event.preventDefault(); // Prevent the default form submission
-    const form = event.target; // Get the form element
+    event.preventDefault(); 
+    const form = event.target; 
 
     try {
       const response = await fetch(form.action, {
@@ -21,14 +21,14 @@ const Contact = () => {
       });
 
       if (response.ok) {
-        setIsSubmitted(true); // Update submission state
-        form.reset(); // Reset the form
+        setIsSubmitted(true); 
+        form.reset(); 
       } else {
-        setError('There was a problem with your submission. Please try again.'); // Set error message
+        setError('There was a problem with your submission. Please try again.'); 
       }
     } catch (err) {
       console.error('Error:', err);
-      setError('There was an error submitting the form. Please try again later.'); // Set error message
+      setError('There was an error submitting the form. Please try again later.'); 
     }
   };
 
@@ -36,7 +36,7 @@ const Contact = () => {
     <div className="contact-page">
       <h1 className="contact-title">Get in Touch</h1>
 
-      {/* Contact Information */}
+     
       <div className="contact-info">
         <p>
           <strong>Email:</strong> acmchapter@nitte.edu.in
@@ -49,7 +49,7 @@ const Contact = () => {
         </p>
       </div>
 
-      {/* Google Maps Embed */}
+      
       <div className="map-container">
         <iframe
           title="Google Maps Location"
@@ -59,7 +59,7 @@ const Contact = () => {
         ></iframe>
       </div>
 
-      {/* Contact Form */}
+     
       <div className="contact-form">
         <h2>Send Us a Message</h2>
         <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" onSubmit={handleSubmit}>
