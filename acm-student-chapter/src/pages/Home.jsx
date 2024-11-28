@@ -1,5 +1,5 @@
 
-import './Home.css'; // Ensure to create this CSS file for styling
+import './Home.css'; 
 import { useEffect } from 'react';
 
 const Home = () => {
@@ -29,7 +29,7 @@ const Home = () => {
 
   return (
     <div>
-      {/* Hero Section */}
+    
       <section className="hero">
         <div className="hero-content">
           <h1 className="hero-title">Welcome to the ACM Student Chapter</h1>
@@ -38,7 +38,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* About Section */}
+     
       <section className="about">
         <h2>About Us</h2>
         <p>
@@ -48,7 +48,7 @@ const Home = () => {
         </p>
       </section>
 
-      {/* Vision Section */}
+     
       <section className="vision">
         <h2>Vision</h2>
         <p>
@@ -57,7 +57,7 @@ const Home = () => {
         </p>
       </section>
 
-      {/* Values Section */}
+     
       <section className="values">
         <h2>Values</h2>
         <ul>
@@ -68,7 +68,7 @@ const Home = () => {
         </ul>
       </section>
 
-      {/* Beliefs Section */}
+
       <section className="beliefs">
         <h2>Beliefs</h2>
         <p>
@@ -78,7 +78,7 @@ const Home = () => {
         </p>
       </section>
 
-      {/* Events Section */}
+    
       <section className="events" id="events">
         <h2>Upcoming Events</h2>
         <p>Join us for exciting events that inspire creativity and collaboration!</p>
@@ -89,7 +89,7 @@ const Home = () => {
         </ul>
       </section>
 
-      {/* Core Members Section */}
+      
       <section className="core-members">
         <h2>Meet Our Core Members</h2>
         <p>Our dedicated team is here to guide and support you!</p>
@@ -100,7 +100,7 @@ const Home = () => {
         </ul>
       </section>
 
-      {/* Contact Section */}
+     
       <section className="contact">
         <h2>Get in Touch</h2>
         <p>If you have any questions or want to collaborate, feel free to reach out!</p>
