@@ -50,7 +50,7 @@ Make sure you have the following installed:
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/acm-nmam-it-club-website.git
+   git clone https://github.com/Hari-hara7/ACM-Website2.git
    cd acm-nmam-it-club-website
 ### Install the dependencies:
 npm install
